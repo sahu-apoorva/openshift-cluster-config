@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-spring-kotlin
+  name: sample-hello-world
 spec:
   selector:
     matchLabels:
-      app: sample-spring-kotlin
+      app: sample-hello-world
   template:
     metadata:
       labels:
-        app: sample-spring-kotlin
+        app: sample-hello-world
     spec:
       containers:
-      - name: sample-spring-kotlin
+      - name: sample-hello-world
         image: quay.io/openshift-knative/helloworld-go:ppc64le
         ports:
         - containerPort: 8080
