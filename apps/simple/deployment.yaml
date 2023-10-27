@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: sample-spring-kotlin
-        image: piomin/sample-spring-kotlin:1.4.8
+        image: docker.io/ppc64le/hello-world
         ports:
         - containerPort: 8080
           name: http
